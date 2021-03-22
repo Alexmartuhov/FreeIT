@@ -9,7 +9,7 @@ public class task6 {
 
         int number = sc.nextInt();
 
-        if ((number/1000<1) && (number/100>=1)){
+        if ((number<1000) && (number>99)){
             System.out.println("Число трехзначное");
             }
         else {
