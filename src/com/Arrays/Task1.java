@@ -9,7 +9,6 @@ public class Task1 {
         int number = 20;
         int length = number / 2; //находим длину массива
         int[] mass = new int[length];
-        mass[0] = 2;
         for (int i = 0; i < mass.length; i++) {
             mass[i] = 2 * (i + 1);
             System.out.print(mass[i] + " ");

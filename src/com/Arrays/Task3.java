@@ -9,16 +9,16 @@ public class Task3 {
     public static void main(String[] args) {
         Random r = new Random();
         int[] i = new int[15];
-        int chetnie = 0;
+        int even = 0;
         for (int j = 0; j < i.length; j++) {
             i[j] = r.nextInt(99);
             System.out.print(i[j] + " ");
-            if (i[j] % 2 == 0 && i[j] != 0) {
-                chetnie++;
+            if (i[j] != 0 && i[j] % 2 == 0) {
+                even++;
             }
         }
         System.out.println();
-        System.out.println("В массиве четных чисел: "+chetnie);
+        System.out.println("В массиве четных чисел: "+even);
     }
 }
 
