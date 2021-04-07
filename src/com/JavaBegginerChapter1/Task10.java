@@ -1,5 +1,6 @@
 package com.JavaBegginerChapter1;
 
+
 public class Task10 {
     public static void main(String[] args) {
         long factorial = 1;

@@ -1,5 +1,6 @@
 package com.JavaBegginerChapter1;
 
+
 import java.util.Scanner;
 
 //Имеется целое число, определить является ли это число простым, т.е.

@@ -1,5 +1,6 @@
 package com.JavaBegginerChapter1;
 
+
 import java.util.Random;
 
 //Создать массив оценок произвольной длины, вывести максимальную и

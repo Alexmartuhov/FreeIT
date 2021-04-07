@@ -2,6 +2,7 @@ package com.JavaBegginerChapter1;
 //Создать последовательность случайных чисел, найти и вывести наибольшее
 //из них.
 
+
 import java.util.Random;
 
 public class Task13 {

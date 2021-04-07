@@ -1,5 +1,6 @@
 package com.JavaBegginerChapter1;
 
+
 import java.util.Scanner;
 
 //Найдите сумму первых n целых чисел, которые делятся на 3.
