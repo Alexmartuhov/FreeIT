@@ -11,7 +11,7 @@ public class Task14 {
         int[] i = new int[10];
         int max=0, min=10;
         for (int j = 0; j < i.length; j++) {
-            i[j] = r.nextInt(9)+1;
+            i[j] = r.nextInt(10)+1;
             if (i[j] > max) {
                 max = i[j];
             }
