@@ -10,7 +10,7 @@ public class Task6 {
         Random r = new Random();
         int[] mass = new int[4];
         for (int j = 0; j < mass.length; j++) {
-            mass[j] = r.nextInt(10);
+            mass[j] = r.nextInt(11);
             System.out.print(mass[j] + " ");
         }
         int i = 0;

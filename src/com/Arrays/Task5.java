@@ -15,8 +15,8 @@ public class Task5 {
         int sum1 = 0, sum2 = 0;
         double average1, average2;
         for (int j = 0; j < mass1.length; j++) {
-            mass1[j] = r.nextInt(15);
-            mass2[j] = r.nextInt(15);
+            mass1[j] = r.nextInt(16);
+            mass2[j] = r.nextInt(16);
             System.out.print(mass1[j] + " ");
             sum1 += mass1[j];
             sum2 += mass2[j];
@@ -26,8 +26,8 @@ public class Task5 {
             System.out.print(mass2[j] + " ");
         }
         System.out.println();
-        average1 = sum1 / mass1.length;
-        average2 = sum2 / mass2.length;
+        average1 = (double) sum1 / (double) mass1.length;
+        average2 = (double) sum2 / (double) mass2.length;
         if (average1 < average2) {
             System.out.println("Среднее арифмитическое второго массива больше");
         } else {

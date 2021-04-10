@@ -11,7 +11,7 @@ public class Task3 {
         int[] i = new int[15];
         int even = 0;
         for (int j = 0; j < i.length; j++) {
-            i[j] = r.nextInt(99);
+            i[j] = r.nextInt(100);
             System.out.print(i[j] + " ");
             if (i[j] != 0 && i[j] % 2 == 0) {
                 even++;

@@ -10,7 +10,7 @@ public class Task4 {
         Random r = new Random();
         int[] i = new int[20];
         for (int j = 0; j < i.length; j++) {
-            i[j] = r.nextInt(20);
+            i[j] = r.nextInt(21);
             System.out.print(i[j] + " ");
             if (j % 2 != 0) {
                 i[j] = 0;
