@@ -22,12 +22,12 @@ public class Task4 {
     public static void main(String[] args) {
         class TextFormater {
             int wordNumber(String str) {
-                String[] word = str.split("\\s+");
+                String[] word = str.split("[\\s]*");
                 return word.length;
             }
 
             boolean polindrom(String sentence) {
-                String[] word = sentence.split("\\s+");
+                String[] word = sentence.split("\\s*(\\s|,|!|\\.)\\s*");
                 boolean polindrom = false;
                 for (int i = 0; i < word.length; i++) {
                     String wordNew = "";
