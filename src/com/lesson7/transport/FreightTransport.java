@@ -1,7 +1,7 @@
 package com.lesson7.transport;
 
 public class FreightTransport extends LandTransport {
-    int carrying;
+    private int carrying;
     private void specification(FreightTransport car) {
         System.out.println("Грузовой автомобиль марки " + brand + ", мощность двигателя - " +
                 power + " л.с. (" + kWPower() + " кВт/ч), " + "масса - " +

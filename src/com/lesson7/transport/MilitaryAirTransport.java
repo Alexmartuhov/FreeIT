@@ -1,8 +1,8 @@
 package com.lesson7.transport;
 
 public class MilitaryAirTransport extends AirTransport {
-    boolean catapult;
-    int numberOfRockets;
+    private boolean catapult;
+    private int numberOfRockets;
 
     private void specification(MilitaryAirTransport fly) {
         System.out.println("Военный самолет марки " + brand + ", мощность двигателя - " +
@@ -12,7 +12,7 @@ public class MilitaryAirTransport extends AirTransport {
                 + wingspan + ", наличие катапульты - " + catapult + ", количество ракет на борту - "
                 + numberOfRockets);
     }
-    private void shout () {
+    private void shot () {
         if (numberOfRockets > 0) {
             System.out.println("Ракета пошла");
             numberOfRockets-=1;

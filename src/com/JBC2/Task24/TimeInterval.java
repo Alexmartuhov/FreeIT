@@ -9,21 +9,21 @@ import java.sql.Time;
 //два конструктора: получающий общее количество секунд, и часы, минуты и секунды
 //по отдельности. Сделать метод для вывода данных.
 public class TimeInterval {
-    int hour;
-    int min;
-    int sec;
+    private int hour;
+    private int min;
+    private int sec;
 
-    TimeInterval(int s) {      //конструтор получающий количество секунд
-        sec = s % 60;
-        int m = (s - sec) / 60;
-        min = m % 60;
-        hour = (m - min) / 60;
+    TimeInterval(int sec) {      //конструтор получающий количество секунд
+        this.sec = sec % 60;
+        int min = (sec - this.sec) / 60;
+        this.min = min % 60;
+        hour = (min - this.min) / 60;
     }
 
-    TimeInterval(int h, int m, int s) {   //конструтор, получающий данные по отдельности
-        sec = s;
-        min = m;
-        hour = h;
+    TimeInterval(int hour, int min, int sec) {   //конструтор, получающий данные по отдельности
+        this.sec = sec;
+        this.min = min;
+        this.hour = hour;
     }
 
     int getSecond() {                                //метод для получения полного количества секунд

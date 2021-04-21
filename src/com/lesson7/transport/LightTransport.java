@@ -1,8 +1,8 @@
 package com.lesson7.transport;
 
 public class LightTransport extends LandTransport {
-    String bodyType;
-    int numberOfPassengers;
+    private String bodyType;
+    private int numberOfPassengers;
 
     private void specification() {
         System.out.println("Легковой автомобиль марки " + brand + ", мощность двигателя - " +
