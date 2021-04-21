@@ -10,7 +10,7 @@ public class AdditionalTask3 {
         Random r = new Random();
         Scanner sc=new Scanner(System.in);
         System.out.println("Введите число С: ");
-        int C=sc.nextInt();
+        int с=sc.nextInt();
         int[] mass = new int[5];
         int sum = 0;
         double average;
@@ -18,7 +18,7 @@ public class AdditionalTask3 {
         for (int i = 0; i < mass.length; i++) {
             mass[i] = r.nextInt(100);
             System.out.print(mass[i] + " ");
-            if(mass[i]>C){
+            if(mass[i]>с){
                 sum+=mass[i];
                 j++;
             }
@@ -26,7 +26,7 @@ public class AdditionalTask3 {
         if (j != 0) {
             average = (double) sum / j;
             System.out.println();
-            System.out.println("Среднне арифметическое элементов массива превосходящих "+C+": " + average);
+            System.out.println("Среднне арифметическое элементов массива превосходящих "+с+": " + average);
         } else {
             System.out.println("Нет элементов массива превосходящих число С");
         }
