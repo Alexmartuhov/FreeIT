@@ -5,11 +5,9 @@ package com.lesson3;
 public class Task2 {
     public static void main(String[] args) {
         int sum = 1;
-        for (int hour = 1; hour < 25; hour++) {
-            if (hour % 3 == 0) {
-                sum *= 2;
-                System.out.println("Через " + hour + " часов(а) амёб будет: " + sum);
-            }
+        for (int hour = 3; hour < 25; hour += 3) {
+            sum *= 2;
+            System.out.println("Через " + hour + " часов(а) амёб будет: " + sum);
         }
     }
 }

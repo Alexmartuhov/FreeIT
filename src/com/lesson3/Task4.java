@@ -12,7 +12,7 @@ public class Task4 {
         int b = sc.nextInt();
         int sum=0;
         if(b>=0) {
-            while (0 < b) {
+            while (b > 0) {
                 sum += a;
                 b--;
             }

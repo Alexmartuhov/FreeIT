@@ -17,11 +17,9 @@ public class task3 {
             } else {
                 a += 1;
             }
+        } else {
+            a = 10;
         }
-        else
-            {
-                a = 10;
-            }
-        System.out.print("Результат:"+a);
+        System.out.print("Результат:" + a);
     }
 }
