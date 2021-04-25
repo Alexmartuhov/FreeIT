@@ -14,14 +14,14 @@ public class Task1 {
 
         Scanner sc = new Scanner(System.in);                            //ввожу дату интом, стрингом будет сложнее
         System.out.println("Введите год в формате \"гггг\"");           //проверку на адекватность значений не делаю
-        int setYear=sc.nextInt();
+        int setYear = sc.nextInt();
         System.out.println("Введите месяц в формате \"ММ\"");
-        int setMonth=sc.nextInt();
+        int setMonth = sc.nextInt();
         System.out.println("Введите день месяца в формате \"дд\"");
-        int setDay=sc.nextInt();
+        int setDay = sc.nextInt();
 
         Calendar calendar = Calendar.getInstance();                     //создаю объект календаря, так как класса "дата" нельзя установить отдельные параметры
-        calendar.set(Calendar.MONTH, setMonth-1);                       //то есть можно, но только через миллисекунды
+        calendar.set(Calendar.MONTH, setMonth - 1);                       //то есть можно, но только через миллисекунды
         calendar.set(Calendar.DATE, setDay);
         calendar.set(Calendar.YEAR, setYear);
         Date date = calendar.getTime();                                 //выводим название месяца через DateFormat
@@ -29,7 +29,7 @@ public class Task1 {
         System.out.println(simpleDateFormat.format(date));
 
 
-        LocalDate localDate =LocalDate.of(setYear,setMonth,setDay);         //решение через java.time
+        LocalDate localDate = LocalDate.of(setYear, setMonth, setDay);         //решение через java.time
         System.out.println(localDate);
         System.out.println(localDate.getMonth());
     }
