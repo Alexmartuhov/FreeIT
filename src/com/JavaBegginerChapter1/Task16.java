@@ -1,5 +1,6 @@
 package com.JavaBegginerChapter1;
 
+
 import java.util.Random;
 
 //Определите сумму элементов одномерного массива, расположенных между
